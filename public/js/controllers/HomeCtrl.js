@@ -1,9 +1,22 @@
 angular.module('fireApp')
 .controller('HomeCtrl', ["$scope", "FibonacciSvc", function($scope, FibonacciSvc) {
+
+	// Array to push numbers into
 	$scope.fibonacciSequence = [];
-	$scope.printFibonacci = function() {
+
+	// Function that creates Fibonacci numbers with looping
+	$scope.printFibonacciLooping = function() {
 		for(var i = 2; i <= 15; i++) {
 			var num = FibonacciSvc.looping(i)
+			console.info("Fibonacci: ", num)
+			$scope.fibonacciSequence.push(num)
+		}
+	}
+
+	// Function that creates Fibonacci numbers with recursion
+	$scope.printFibonacciRecursive = function() {
+		for(var i = 2; i <= 15; i++) {
+			var num = FibonacciSvc.recursive(i)
 			console.info("Fibonacci: ", num)
 			$scope.fibonacciSequence.push(num)
 		}
