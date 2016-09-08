@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1>Fibonacci Generator</h1>
+  <p>This will print out some of the Fibonacci sequence.</p>
+  <p><button ng-click="printFibonacci()" class="btn btn-success btn-lg">Print Fibonacci!</button></p>
+</div>
+
+<ul class="nav nav-pills">
+  <li class="active" ng-repeat="number in fibonacciSequence">
+  	<a href="#"><span class="badge">{{number}}</span></a>
+  </li>
+</ul>
