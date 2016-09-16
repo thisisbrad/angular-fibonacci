@@ -6,6 +6,10 @@
 	background-color: #e74c3c;
 }
 
+.container {
+	margin-top: 60px;
+}
+
 body {
 	background-image : url("../img/geometry.png");
 	background-repeat: repeat;

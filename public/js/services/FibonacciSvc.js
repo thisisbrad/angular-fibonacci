@@ -17,3 +17,13 @@ angular.module('fireApp')
   //   }
   // };
 });
+
+/* EXPLAIN RECURSION
+
+recursive(4) + recursive(3)
+(recursive(3) + recursive(2)) + (recursive(2) + recursive(1))
+((recursive(2) + recursive(1)) + 1) + (1 + 1)
+((1 + 1) + 1) + (1 + 1)
+5
+
+*/

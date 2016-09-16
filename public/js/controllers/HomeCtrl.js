@@ -14,11 +14,11 @@ angular.module('fireApp')
 	// }
 
 	// Function that creates Fibonacci numbers with recursion
-	// $scope.printFibonacciRecursive = function() {
-	// 	for(var i = 2; i <= 15; i++) {
-	// 		var num = FibonacciSvc.recursive(i)
-	// 		console.info("Fibonacci: ", num)
-	// 		$scope.fibonacciSequence.push(num)
-	// 	}
-	// }
+// 	$scope.printFibonacciRecursive = function() {
+// 		for(var i = 2; i <= 15; i++) {
+// 			var num = FibonacciSvc.recursive(i)
+// 			console.info("Fibonacci: ", num)
+// 			$scope.fibonacciSequence.push(num)
+// 		}
+// 	}
 }])
