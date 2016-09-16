@@ -5,13 +5,13 @@ angular.module('fireApp')
 	$scope.fibonacciSequence = [];
 
 	// Function that creates Fibonacci numbers with looping
-	// $scope.printFibonacciLooping = function() {
-	// 	for(var i = 2; i <= 15; i++) {
-	// 		var num = FibonacciSvc.looping(i)
-	// 		console.info("Fibonacci: ", num)
-	// 		$scope.fibonacciSequence.push(num)
-	// 	}
-	// }
+	$scope.printFibonacciLooping = function() {
+		for(var i = 2; i <= 15; i++) {
+			var num = FibonacciSvc.looping(i)
+			console.info("Fibonacci: ", num)
+			$scope.fibonacciSequence.push(num)
+		}
+	}
 
 	// Function that creates Fibonacci numbers with recursion
 // 	$scope.printFibonacciRecursive = function() {
